@@ -25,8 +25,25 @@ namespace FinalTest
                     sum++;
                                            
             }
+            string[] result = new string[sum];
 
-          
+
+            for (int i = 0; i < Test.Length; i++)
+            {
+
+
+                if (Test[i].Length <= 3)
+
+                    result[i] = Test[i];
+
+            }
+
+            for (int i = 0; i < sum; i++)
+            {
+                Console.WriteLine(result[i] + "   ");
+
+            }
+
         }
 
     }
